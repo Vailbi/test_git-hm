@@ -1,1 +1,1 @@
-﻿
+﻿string [] inputArr = {"one" , "two0" ,  "=_=" , "rus", "test", "00"};

@@ -1,22 +1,22 @@
-﻿string [] inputArr = {"one" , "two0" ,  "=_=" , "rus", "test", "00"};
+﻿string [] inputArray = {"one" , "two0" ,  "=_=" , "rus", "test", "00"};
 int newSize = 0;
-for (int i = 0; i < inputArr.Length; i++)
+for (int i = 0; i < inputArray.Length; i++)
 {
-   if (inputArr[i].Length <= 3)
+   if (inputArray[i].Length <= 3)
    {
     newSize++;
    } 
 }
-string [] newArr = new string[newSize];
+string [] newArray = new string[newSize];
 
-int j= 0;
+int index= 0;
 
-for (int i = 0; i < inputArr.Length; i++)
+for (int i = 0; i < inputArray.Length; i++)
 {
-    if (inputArr[i].Length <= 3)
+    if (inputArray[i].Length <= 3)
     {
-        newArr[j] = inputArr[i];
-        j++;
+        newArray[index] = inputArray[i];
+        index++;
     }
 }
 string Print(string[] array)
@@ -35,5 +35,5 @@ string Print(string[] array)
     return output;
 }
 
-Console.WriteLine($"[{Print(newArr)}]");
-File.WriteAllText("output.txt" , Print(newArr));
+Console.WriteLine($"[{Print(newArray)}]");
+File.WriteAllText("output.txt" , Print(newArray));
